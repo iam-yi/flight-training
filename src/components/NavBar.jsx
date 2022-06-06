@@ -14,7 +14,7 @@ export default function NavBar({ user, setUser }) {
         <nav>
            <Link to="/orders">Order History</Link>
            &nbsp; | &nbsp;
-           <Link to="/orders/news">New Order</Link>
+           <Link to="/orders/news">New Rental</Link>
            <span>Welcome, {user.name}</span>
            &nbsp; | &nbsp;
            <Link to="" onClick={handleLogOut}>Log Out</Link>
