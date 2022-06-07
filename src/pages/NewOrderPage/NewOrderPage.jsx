@@ -9,6 +9,7 @@ export default function NewOrderPage() {
         <option value="JimC">Jim C</option>
         <option value="Step">Stephanie L</option>
         <option value="MarioM">Mario R</option>
+        <option value="MarvelJ">Marvel J</option>
       </select>
       <label>Aircraft</label>
       <select value="aircraft">
