@@ -5,9 +5,11 @@ import AuthPage from '../AuthPage/AuthPage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import Instructor from '../Instructor/Instructor';
+import RentalPrice from '../RentalPrice/RentalPrice';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import { instructors } from '../../data.js';
+import { price } from '../../priceData';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -21,9 +23,8 @@ function App() {
             {/* Route components in here */}
             <Route path="/orders/new" element={<NewOrderPage  />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
-            <Route path="/our-instructor" element={<Instructor instructors={instructors}/>} />
-
-            
+            <Route path="/instructor" element={<Instructor instructors={instructors}/>} />
+            <Route path="/price" element={<RentalPrice price={price} />} />
           </Routes>
         </>
         :

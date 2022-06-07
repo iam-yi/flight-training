@@ -16,9 +16,9 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to="/orders/new">New Order</Link>
       &nbsp; | &nbsp;
-      <Link to="">Rental Rate</Link>
+      <Link to="/price">Rental Rate</Link>
       &nbsp; | &nbsp;
-      <Link to="/our-instructor">Our Instructor Team</Link>
+      <Link to="/instructor">Instructor Team</Link>
       &nbsp; | &nbsp;
       <span>Welcome, {user.name}</span>
       &nbsp; | &nbsp;
