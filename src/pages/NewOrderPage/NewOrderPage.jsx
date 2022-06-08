@@ -1,7 +1,34 @@
 import { useState } from "react";
 
 export default function NewOrderPage() {
-  const [] = useState();
+  const [formValue, setFormValue] = useState({
+    studentId: "",
+    perHrs: "",
+    totalHrs: ""
+  });
+
+  const handleChange = (event) => {
+    let value = event.target.value;
+    let name = event.target.name;
+
+    setFormValue((prevalue) => {
+      return {
+        ...prevalue,
+        [name]: value
+      }
+    })
+
+  }
+  // const [studentId, setStudentId] = useState('');
+  // const [pervHrs, setPervHrs] = useState('');
+  // const [totalHrs, setTotalHrs] = useState('');
+
+  // const handleChange = (event) => {
+  //   setStudentId(event.target.name);
+  //   setPervHrs(event.target.name);
+  //   setTotalHrs(event.target.name);
+  // }
+
   return (
     <>
     <h1>✈️ New Aircarft Rental Page ✈️</h1>
@@ -15,7 +42,7 @@ export default function NewOrderPage() {
         <option value="MarvelJ">Marvel J</option>
       </select>
       <label>ID: </label>
-      <input type="text" name="student-id" required />
+      <input type="text" name="studentId" onChange={handleChange} required />
       <label>Aircraft</label>
       <select value="aircraft">
         <option value="1115">Cessna 152</option>
@@ -24,9 +51,9 @@ export default function NewOrderPage() {
         <option value="280">BE76 Duchess</option>
       </select>
       <label>Pervious Total Hours: </label>
-      <input type="text" name="pervHrs" required />
+      <input type="text" name="pervHrs" onChange={handleChange} required />
       <label>Current Total Hours: </label>
-      <input type="text" name="totalHrs" required />
+      <input type="text" name="totalHrs" onChange={handleChange} required />
       <button type="submit">Check out</button>
     </form>
     </div>

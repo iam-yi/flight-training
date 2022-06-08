@@ -1,8 +1,6 @@
 
 import './RentalPrice.css';
 
-import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
 export default function RentalPrice({ prices }) {
     
@@ -32,6 +30,8 @@ export default function RentalPrice({ prices }) {
               
             </tbody>
         </table>
+        <p>Note: Cancellation must be made within 24 hours, otherwise will charge $50 non refundale</p>
+       
         </>
     )
 }

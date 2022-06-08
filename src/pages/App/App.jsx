@@ -10,6 +10,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import { instructors } from '../../data.js';
 import { prices } from '../../priceData';
+import Success from '../../components/Success/Success';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -25,6 +26,8 @@ function App() {
             <Route path="/orders" element={<OrderHistoryPage />} />
             <Route path="/instructor" element={<Instructor instructors={instructors}/>} />
             <Route path="/price" element={<RentalPrice prices={prices} />} />
+            <Route path="/success" element={<Success />} />
+            
           </Routes>
         </>
         :
