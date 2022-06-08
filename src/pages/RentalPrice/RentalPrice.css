@@ -1,0 +1,26 @@
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f0ef;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgb(223, 226, 227);
+  }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+    text-indent: initial;
+
+}
+
+th {
+    background-color: #f8c0da;
+    font-weight: 700;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    
+}
