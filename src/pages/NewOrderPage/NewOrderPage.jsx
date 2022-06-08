@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function NewOrderPage() {
+  const [] = useState();
   return (
     <>
     <h1>✈️ New Aircarft Rental Page ✈️</h1>
