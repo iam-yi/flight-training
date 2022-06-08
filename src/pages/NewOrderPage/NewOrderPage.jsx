@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+// import order from "../../../models/order";
+
 
 export default function NewOrderPage() {
   const [formValue, setFormValue] = useState({
@@ -6,6 +9,7 @@ export default function NewOrderPage() {
     perHrs: "",
     totalHrs: ""
   });
+  const navigate = useNavigate();
 
   const handleChange = (event) => {
     let value = event.target.value;
@@ -17,8 +21,12 @@ export default function NewOrderPage() {
         [name]: value
       }
     })
-
   }
+ 
+  const routeChange = () =>{
+    navigate('/payment');
+  }
+
   // const [studentId, setStudentId] = useState('');
   // const [pervHrs, setPervHrs] = useState('');
   // const [totalHrs, setTotalHrs] = useState('');
@@ -54,8 +62,9 @@ export default function NewOrderPage() {
       <input type="text" name="pervHrs" onChange={handleChange} required />
       <label>Current Total Hours: </label>
       <input type="text" name="totalHrs" onChange={handleChange} required />
-      <button type="submit">Check out</button>
+      <button type="submit" onClick={routeChange}>Check out</button>
     </form>
+    {/* <span className="right">${order.orderTotal.toFix(2)}</span> */}
     </div>
     </>
   );

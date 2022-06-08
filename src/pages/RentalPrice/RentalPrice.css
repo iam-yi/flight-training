@@ -24,3 +24,9 @@ th {
     border-bottom: 1px solid #ddd;
     
 }
+
+.btn{
+  background-color: #f68f12;
+  color: white;
+  padding: 15px 25px;
+}

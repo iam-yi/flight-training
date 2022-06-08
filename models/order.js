@@ -28,7 +28,7 @@ const orderSchema = new Schema({
 });
 
 orderSchema.virtual('orderTotal').get(function() {
-    return this.lineItems.reduce((total, aircraft) => total + aircraft.extPrice);
+    return this.lineItems.reduce((total, aircraft) => total + aircraft.extPrice, 0);
 });
 
 orderSchema.virtual('orderId').get(function () {
