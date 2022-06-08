@@ -1,4 +1,4 @@
-export const price = [
+export const prices = [
     {
         aircraft: "Cassna 152",
         speed: 108,
@@ -23,4 +23,4 @@ export const price = [
         features: "IFR GNS 430",
         price: 280,
     }
-]
+];

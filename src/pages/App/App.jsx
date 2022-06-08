@@ -9,7 +9,7 @@ import RentalPrice from '../RentalPrice/RentalPrice';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import { instructors } from '../../data.js';
-import { price } from '../../priceData';
+import { prices } from '../../priceData';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -24,7 +24,7 @@ function App() {
             <Route path="/orders/new" element={<NewOrderPage  />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
             <Route path="/instructor" element={<Instructor instructors={instructors}/>} />
-            <Route path="/price" element={<RentalPrice price={price} />} />
+            <Route path="/price" element={<RentalPrice prices={prices} />} />
           </Routes>
         </>
         :
