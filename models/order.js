@@ -12,6 +12,9 @@ const lineItemSchema = new Schema ({
 lineItemSchema.virtual('extPrice').get(function() {
     return (this.totalHrs - this.pervHrs) * this.aircraft.price;
 });
+lineItemSchema.virtual('extHrs').get(function() {
+    return this.totalHrs - this.pervHrs;
+});
 
 const orderSchema = new Schema({
     // need user log in to order
@@ -21,7 +24,6 @@ const orderSchema = new Schema({
         required: true
     },
     lineItems: [lineItemSchema]
-
 }, {
     timestamps: true,
     toJSON: { virtuals: true }
@@ -29,6 +31,10 @@ const orderSchema = new Schema({
 
 orderSchema.virtual('orderTotal').get(function() {
     return this.lineItems.reduce((total, aircraft) => total + aircraft.extPrice, 0);
+});
+
+orderSchema.virtual('paidHrs').get(function() {
+    return this.lineItems.reduce((total, aircraft) => total + aircraft.extHrs,  0);
 });
 
 orderSchema.virtual('orderId').get(function () {

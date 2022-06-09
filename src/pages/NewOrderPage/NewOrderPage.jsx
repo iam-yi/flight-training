@@ -6,9 +6,13 @@ import { useNavigate } from "react-router-dom";
 export default function NewOrderPage() {
   const [formValue, setFormValue] = useState({
     studentId: "",
-    perHrs: "",
-    totalHrs: ""
+    prevHrs: "",
+    currHrs: "",
+    aircraft: "1115",
+    price:0,
+
   });
+
   const navigate = useNavigate();
 
   const handleChange = (event) => {
@@ -16,13 +20,25 @@ export default function NewOrderPage() {
     let name = event.target.name;
 
     setFormValue((prevalue) => {
-      return {
+      const newFormValue = {
         ...prevalue,
         [name]: value
       }
+      if(newFormValue.prevHrs && newFormValue.currHrs) {
+        const prevHrs = parseFloat(newFormValue.prevHrs);
+        const currHrs = parseFloat(newFormValue.currHrs);
+        const aircraftPrice = parseFloat(newFormValue.aircraft);
+        const price = (currHrs - prevHrs) * aircraftPrice;
+        newFormValue.price = price;
+        
+      }
+
+      return newFormValue;
     })
+    
+
   }
- 
+  
   const routeChange = () =>{
     navigate('/payment');
   }
@@ -52,19 +68,20 @@ export default function NewOrderPage() {
       <label>ID: </label>
       <input type="text" name="studentId" onChange={handleChange} required />
       <label>Aircraft</label>
-      <select value="aircraft">
-        <option value="1115">Cessna 152</option>
-        <option value="131">Cessna 172</option>
-        <option value="182">Cessna 182 RG</option>
-        <option value="280">BE76 Duchess</option>
+      <select name="aircraft"  onChange={handleChange}>
+        <option name="aircraft" value="1115">Cessna 152</option>
+        <option name="aircraft" value="131">Cessna 172</option>
+        <option name="aircraft" value="182">Cessna 182 RG</option>
+        <option name="aircraft" value="280">BE76 Duchess</option>
       </select>
       <label>Pervious Total Hours: </label>
-      <input type="text" name="pervHrs" onChange={handleChange} required />
+      <input type="text" name="prevHrs" onInput={handleChange} required />
       <label>Current Total Hours: </label>
-      <input type="text" name="totalHrs" onChange={handleChange} required />
+      <input type="text" name="currHrs" onInput={handleChange} required />
       <button type="submit" onClick={routeChange}>Check out</button>
     </form>
-    {/* <span className="right">${order.orderTotal.toFix(2)}</span> */}
+    <br />
+    <span className="right">The Rental Total Amount: ${formValue.price.toFixed(2)}</span>
     </div>
     </>
   );

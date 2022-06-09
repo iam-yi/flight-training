@@ -51,7 +51,6 @@ export default function PaymentPage() {
             <br />
         
         <button type="submit" onClick={routeChange}>Complete Checkout and Pay</button>
-        
        
         </>
     );
