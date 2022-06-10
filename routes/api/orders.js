@@ -4,6 +4,7 @@ const ordersCtrl = require('../../controllers/api/orders');
 const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
 router.post('/new', ensureLoggedIn, ordersCtrl.saveOrder);
+router.get('/', ensureLoggedIn, ordersCtrl.getAllForUser);
 
 
 module.exports = router;

@@ -24,6 +24,7 @@ const orderSchema = new Schema({
         ref: 'User',
         required: true
     },
+    studentId: {type: String},
     lineItems: [lineItemSchema]
 }, {
     timestamps: true,
