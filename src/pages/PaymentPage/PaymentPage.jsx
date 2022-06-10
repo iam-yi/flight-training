@@ -1,9 +1,14 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import * as orderService from '../../utilities/order-service';
+
 
 export default function PaymentPage() {
     const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location); 
 
-    const routeChange = () =>{
+    const routeChange = async() =>{
+        await orderService.saveOrder(location.state.newOrder);
         navigate('/success');
       }
     return (

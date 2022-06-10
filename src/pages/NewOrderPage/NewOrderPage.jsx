@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 // import order from "../../../models/order";
 
 
+
 export default function NewOrderPage() {
   const [formValue, setFormValue] = useState({
     studentId: "",
@@ -14,6 +15,7 @@ export default function NewOrderPage() {
   });
 
   const navigate = useNavigate();
+
 
   const handleChange = (event) => {
     let value = event.target.value;
@@ -30,34 +32,32 @@ export default function NewOrderPage() {
         const aircraftPrice = parseFloat(newFormValue.aircraft);
         const price = (currHrs - prevHrs) * aircraftPrice;
         newFormValue.price = price;
-        
       }
-
       return newFormValue;
     })
-    
-
   }
+
   
-  const routeChange = () =>{
-    navigate('/payment');
+  const routeChange = () => {
+    const newOrder = {
+      currHrs: formValue.currHrs,
+      prevHrs: formValue.prevHrs,
+      aircraft: {
+        price: parseFloat(formValue.aircraft),
+        name: formValue.aircraft === '1115' ? 'Cessna 152' : 
+              formValue.aircraft === '131' ? 'Cessna 172' : 
+              formValue.aircraft === '182' ? 'Cessna 182 RG' : 
+              formValue.aircraft === '280' ? 'BE76 Duchess' : ''
+      },
+    };
+    navigate('/payment', {state: {newOrder}});
   }
-
-  // const [studentId, setStudentId] = useState('');
-  // const [pervHrs, setPervHrs] = useState('');
-  // const [totalHrs, setTotalHrs] = useState('');
-
-  // const handleChange = (event) => {
-  //   setStudentId(event.target.name);
-  //   setPervHrs(event.target.name);
-  //   setTotalHrs(event.target.name);
-  // }
 
   return (
     <>
     <h1>✈️ New Aircarft Rental Page ✈️</h1>
     <div className="form-container">
-    <form >
+    <form onSubmit={(event) => event.preventDefault() }>
       <label>Choose Your Instructor: </label>
       <select value="instructor">
         <option value="JimC">Jim C</option>

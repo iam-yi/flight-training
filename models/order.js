@@ -1,19 +1,20 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const aircraftSchema = require('./aircraftSchema');
 
 const lineItemSchema = new Schema ({
-    totalHrs: {type: Number},
-    pervHrs: {type: Number},
+    currHrs: {type: Number},
+    prevHrs: {type: Number},
     aircraft: aircraftSchema
 },{
     toJSON: { virtuals: true}
 });
 
 lineItemSchema.virtual('extPrice').get(function() {
-    return (this.totalHrs - this.pervHrs) * this.aircraft.price;
+    return (this.currHrs - this.prevHrs) * this.aircraft.price;
 });
 lineItemSchema.virtual('extHrs').get(function() {
-    return this.totalHrs - this.pervHrs;
+    return this.currHrs - this.prevHrs;
 });
 
 const orderSchema = new Schema({
