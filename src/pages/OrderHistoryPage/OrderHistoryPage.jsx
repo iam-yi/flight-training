@@ -1,8 +1,9 @@
 import * as orderService from "../../utilities/order-service";
 import NewOrderPage from "../NewOrderPage/NewOrderPage";
 import { useEffect, useState } from "react";
+import "./OrderHistoryPage.css";
 
-export default function OrderHistoryPage() {
+export default function OrderHistoryPage({}) {
   const [orders, setOrders] = useState([]);
 
   useEffect(function() {
@@ -13,11 +14,18 @@ export default function OrderHistoryPage() {
     getOrders();
   }, [])
   
-  const divs = orders.map(o => <div>{o._id}{o.lineItems[0].aircraft.name}</div>) 
+  const divs = orders.map(o => 
+    <div>
+      🧾
+      Order #: {o._id} <br/>
+      Aircraft Rental: {o.lineItems[0].aircraft.name}  <br/>
+      Rental Hour(s): {o.lineItems[0].currHrs - o.lineItems[0].prevHrs } <br />
+      Rental Total: ${o.orderTotal}
+    </div>) 
 
   return (
     <main>  
-      <h1>OrderHistoryPage</h1>
+      <h1> OrderHistoryPage </h1>
       <aside>
 
       {divs}

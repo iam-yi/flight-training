@@ -29,6 +29,7 @@ export default function NewOrderPage() {
   }
 
   function computePrice() {
+
     return (parseFloat(formValue.currHrs) - parseFloat(formValue.prevHrs)) * priceLookUp[formValue.aircraft];
   }
   
