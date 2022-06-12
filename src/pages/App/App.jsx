@@ -29,8 +29,6 @@ function App() {
             <Route path="/orders" element={<OrderHistoryPage />} />
             <Route path="/instructor" element={<Instructor instructors={instructors}/>} />
             <Route path="/price" element={<RentalPrice prices={prices} />} />
-          
-
           </Routes>
         </>
         :
