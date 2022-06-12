@@ -15,10 +15,10 @@ export default function OrderHistoryPage({}) {
   }, [])
   
   const divs = orders.map(o => 
-    <div>
-      🧾
-      Order #: {o._id} <br/>
-      Aircraft Rental: {o.lineItems[0].aircraft.name}  <br/>
+    <div className="OrderHistoryPage">
+      
+      🧾 Order #: {o._id} <br/>
+      ✈️ Aircraft Rental: {o.lineItems[0].aircraft.name}  <br/>
       Rental Hour(s): {o.lineItems[0].currHrs - o.lineItems[0].prevHrs } <br />
       Rental Total: ${o.orderTotal}
     </div>) 
@@ -26,8 +26,7 @@ export default function OrderHistoryPage({}) {
   return (
     <main>  
       <h1> OrderHistoryPage </h1>
-      <aside>
-
+      <aside >
       {divs}
       </aside> 
       

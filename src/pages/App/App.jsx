@@ -10,8 +10,8 @@ import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import { instructors } from '../../data.js';
 import { prices } from '../../priceData';
-import PaymentPage from '../PaymentPage/PaymentPage';
-import Success from '../Success/Success';
+import Home from '../Home/Home';
+
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -23,12 +23,14 @@ function App() {
           <NavBar user={user} setUser={setUser} />
           <Routes>
             {/* Route components in here */}
+
+            <Route path="/" element={<Home  />} />
             <Route path="/orders/new" element={<NewOrderPage  />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
             <Route path="/instructor" element={<Instructor instructors={instructors}/>} />
             <Route path="/price" element={<RentalPrice prices={prices} />} />
-            <Route path="/payment" element={<PaymentPage />} />
-            <Route path="/success" element={<Success />} />
+          
+
           </Routes>
         </>
         :
