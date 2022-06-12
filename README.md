@@ -45,11 +45,11 @@ Each card number repersent its value, expect J,Q,K are eqaul to 10, A equal eith
 
 
 ## Next Steps
-- [ ] Add music to the page
+- [ ] Add Calender & avalile to check aircraft avalibity
 
-- [ ] The highest top score on this website 
+- [ ] Add Payment Page
 
-- [ ] Add a user's profile  
+- [ ] Add google, facebook account login
 
 Created on June 12, 2022. 
 <<<<<<< HEAD
