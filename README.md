@@ -39,7 +39,7 @@ Student able to make a payment for their rental aircraft throught this app.
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
 ![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
-[Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
+![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
 ![React](https://img.shields.io/badge/-React-333?style=flat&logo=react) 
 ![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
 ![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello) 
@@ -60,9 +60,4 @@ Student able to make a payment for their rental aircraft throught this app.
 - [ ] Add google, facebook account login
 
 Created on June 12, 2022. 
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> main
