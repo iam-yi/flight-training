@@ -29,7 +29,7 @@ Student able to make a payment for their rental aircraft throught this app.
 | Description | Screenshot |
 |------------ | ------------|
 | <h3 align="center">Login Page</h3> | <img width="1276" alt="Screen Shot 2022-04-28 at 9 03 21 PM" src="https://i.imgur.com/UPq4G0p.png">
-| <h3 align="center">Insturctor Page</h3> | <img width="1276" alt="Screen Shot 2022-04-28 at 9 03 21 PM" src="https://i.imgur.com/eVfgb6O.png">
+| <h3 align="center">Instructors Page</h3> | <img width="1276" alt="Screen Shot 2022-04-28 at 9 03 21 PM" src="https://i.imgur.com/eVfgb6O.png">
 | <h3 align="center">Rental Rate</h3> | <img width="1276" alt="Screen Shot 2022-04-28 at 9 03 21 PM" src="https://i.imgur.com/kfSNnKZ.png">
 | <h3 align="center">New Rental Page</h3> |  <img width="700" alt="Screen Shot 2022-04-08 at 8 16 49 AM" src="https://i.imgur.com/pfhZIpt.png"/>
 | <h3 align="center">Order History Page</h3> | <img width="700" alt="Screen Shot 2022-04-08 at 8 17 08 AM" src="https://i.imgur.com/f4NZdaw.png"> |
