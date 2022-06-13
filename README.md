@@ -17,10 +17,9 @@
 
 
 ## :memo: Flight Training App Introduction 
-Each card number repersent its value, expect J,Q,K are eqaul to 10, A equal either 1 or 11.
- 2 ways to win each game:  
-* Equal 21 points ==> hit the black Jack, and your money will be doule
-* Under 21 points ==> Your cards total need to be greater than dealer's. 
+Student able to make a payment for their rental aircraft throught this app.
+* Each aircraft have different prices
+* price = total hours * aircraft per hour rate
 
 
 ## :camera: ScreenShots
@@ -39,15 +38,24 @@ Each card number repersent its value, expect J,Q,K are eqaul to 10, A equal eith
 ![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
 ![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
+![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
+[Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
+![React](https://img.shields.io/badge/-React-333?style=flat&logo=react) 
+![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
+![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello) 
+![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
+![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
+![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
+
 
 ## Getting Started
 [Flight Trainig School Depolyed Link](https://flight-training-school.herokuapp.com/) <br>
 
 
 ## Next Steps
-- [ ] Add Calender & avalile to check aircraft avalibity
+- [ ] Add Calender & available to check aircraft availability
 
-- [ ] Add Payment Page
+- [ ] Add Credit Card Payment Page
 
 - [ ] Add google, facebook account login
 
