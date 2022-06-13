@@ -121,7 +121,6 @@ button, a.button {
   padding: 1vmin;
   color: var(--white);
   background-color: var(--orange);
-  /* background-color: black; */
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;

@@ -9,7 +9,6 @@ const priceLookUp = {
   'BE76 Duchess': 280
 };
 
-
 export default function NewOrderPage() {
   const [formValue, setFormValue] = useState({
     studentId: "",
@@ -19,7 +18,6 @@ export default function NewOrderPage() {
   });
 
   const navigate = useNavigate();
-
 
   const handleChange = (event) => {
     let value = event.target.value;

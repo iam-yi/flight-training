@@ -25,7 +25,7 @@ export default function OrderHistoryPage({}) {
 
   return (
     <main>  
-      <h1> OrderHistoryPage </h1>
+      <h1> Order History Page </h1>
       <aside >
       {divs}
       </aside> 

@@ -14,9 +14,11 @@ export default function NavBar({ user, setUser }) {
   return (
 
     <nav className="nav-bar">
+      <Link to="/"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" width="20" height="20" /></Link>
+      &nbsp; | &nbsp;
       <Link to="/orders">Order History</Link>
       &nbsp; | &nbsp;
-      <Link to="/orders/new">New Order</Link>
+      <Link to="/orders/new">New Rental</Link>
       &nbsp; | &nbsp;
       <Link to="/price">Rental Rate</Link>
       &nbsp; | &nbsp;

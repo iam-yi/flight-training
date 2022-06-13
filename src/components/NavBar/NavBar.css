@@ -1,8 +1,11 @@
 .nav-bar{
-    display: flex;
-    align-items: right;
-    justify-content: flex-end;
+    display: block;
     padding: 20px;
     background-color: rgb(230, 98, 188);
     color: #fff;
+    position: relative;
+    z-index: 2;
+    font-size: 17px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
 }
