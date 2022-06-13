@@ -28,7 +28,7 @@ Student able to make a payment for their rental aircraft throught this app.
 
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">Login Page</h3> | <img width="1276" alt="Screen Shot 2022-04-28 at 9 03 21 PM" src="| <h3 align="center">Home Page</h3> | <img width="1276" alt="Screen Shot 2022-04-28 at 9 03 21 PM" src="https://i.imgur.com/UPq4G0p.png">
+| <h3 align="center">Login Page</h3> | <img width="1276" alt="Screen Shot 2022-04-28 at 9 03 21 PM" src="https://i.imgur.com/UPq4G0p.png">
 | <h3 align="center">Home Page</h3> | <img width="1276" alt="Screen Shot 2022-04-28 at 9 03 21 PM" src="https://user-images.githubusercontent.com/101530796/165884932-5924abf6-2216-400c-bc53-7318e50886c6.png">
 | <h3 align="center">Game beginning</h3> |  <img width="381" alt="Screen Shot 2022-04-08 at 8 16 49 AM" src="https://user-images.githubusercontent.com/101530796/162474096-3bc7281b-a159-4ce2-8a3c-f756ed93e7a0.png" width="700"/>
 | <h3 align="center">Game finish</h3> | <img width="325" alt="Screen Shot 2022-04-08 at 8 17 08 AM" src="https://user-images.githubusercontent.com/101530796/162474339-4d89f9ab-a0da-40c0-b21b-1db6bb1d52d0.png" width="700"> |
