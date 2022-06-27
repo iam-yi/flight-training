@@ -1,30 +1,27 @@
 <div align="center"> 
 
 #   Flight Training School
-## Project 4  (P1) 
+## Project 4  (P4) 
 
 <h5>Yi Li</h5>
-<a href="https://msyili.com" target="_blank">
-    <img src="https://img.shields.io/badge/-Portfolio:_user.github.io-darkgreen?style=flat&logo=medium"/>
-</a>
 <a href="https://www.linkedin.com/in/msyili/" target="_blank">
-    <img src="https://img.shields.io/badge/-linkedin.com/in/user-blue?style=flat&``logo=Linkedin&logoColor=white">
+    <img src="https://img.shields.io/badge/-linkedin.com/in/msyili-blue?style=flat&logo=Linkedin&logoColor=white">
  </a> 
 <a href="mailto:yli3623@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-user@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
+    <img src="https://img.shields.io/badge/-yli3623@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
 </a>
 </div>
 
 
-## :memo: Flight Training App Introduction 
+## :memo: Introduction 
 Student able to make a payment for their rental aircraft throught this app.
 * Each aircraft have different prices
 * price = total hours * aircraft per hour rate
 
 
-## :camera: ScreenShots
+## :camera: Screenshots
 <details>
-<summary> App ScreenShots</summary>
+<summary> ⚙️ Functionality</summary>
 
 | Description | Screenshot |
 |------------ | ------------|
@@ -36,7 +33,7 @@ Student able to make a payment for their rental aircraft throught this app.
 </details>
 
 
-## :wrench:Teachnologies Used
+## :wrench: Technologies Used
 ![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
 ![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
@@ -51,7 +48,7 @@ Student able to make a payment for their rental aircraft throught this app.
 
 
 ## Getting Started
-[Flight Trainig School Depolyed Link](https://flight-training-school.herokuapp.com/) <br>
+[Flight Trainig School Deployed Link](https://flight-training-school.herokuapp.com/) <br>
 
 
 ## Next Steps
